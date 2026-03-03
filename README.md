@@ -1,32 +1,122 @@
-# TAB Fitness (Flutter)
 
-TAB stands for **The Absolute Body**.
 
-This implementation includes:
-- Splash branding screen with black/white background and TAB title.
-- First-time auth flow (email/password) with JWT-style custom auth service scaffold.
-- First-time onboarding for profile, BMI, and goal selection.
-- Main app shell with Home, To-Do, Workouts, Meals tabs.
-- Profile button (top-left), hamburger menu (top-right), centered TAB branding.
-- Drawer controls: dark mode toggle, watch sync page, settings page, logout, and Linktree reference.
-- Theme skins: Liquid Glass (default), Material UI, One UI, Nothing-inspired.
-- Home dashboard with progress chart and score cards.
-- Workout, To-Do, and Meals starter flows with add affordances.
-- Floating 🤖 trainer chat assistant in relevant tabs.
-- Firebase data service scaffold (Firestore collections for profile/workouts/meals/todos).
+# TAB – The Absolute Body 💪
 
-## Firebase setup
-1. Create a Firebase project.
-2. Add Android/iOS/Web apps in Firebase Console.
-3. Add generated config files to the Flutter project (`google-services.json`, `GoogleService-Info.plist`, etc.).
-4. Replace default Firebase initialization with generated `firebase_options.dart` if using FlutterFire CLI.
+**TAB (The Absolute Body)** is a modern AI-powered fitness and lifestyle application built with **Flutter** and powered by **Firebase**.
+It helps users track workouts, meals, tasks, and health metrics while receiving personalized AI-driven fitness guidance.
 
-## JWT custom auth
-- `AuthService` currently calls a placeholder endpoint (`https://example.com/api/auth/login`).
-- Replace endpoint with your backend and return `{ "token": "..." }`.
-- Persist JWT in secure storage for production.
+---
 
-## AI chatbot integration
-- `ChatbotService` is a local stub.
-- Replace with backend service that calls OpenAI/ChatGPT APIs.
-- Keep API keys on server side (not in app binary).
+## 🚀 Overview
+
+TAB combines fitness tracking, macro monitoring, task management, smartwatch sync, and AI coaching into one seamless experience. The app focuses on clean UI design, intelligent automation, and goal-based transformation.
+
+---
+
+## 🛠 Tech Stack
+
+* **Frontend:** Flutter
+* **Backend & Services:** Firebase
+
+  * Firebase Authentication
+  * Cloud Firestore
+  * Firebase Storage
+  * Firebase Cloud Functions (if used)
+* **Authentication:** JWT-based email/password system
+* **AI Integration:** OpenAI (ChatGPT) API
+
+---
+
+## ✨ Core Features
+
+### 🔐 Authentication & Onboarding
+
+* Secure JWT-based email/password login
+* First-time onboarding flow
+* Goal selection:
+
+  * Weight Gain
+  * Weight Loss
+  * Physique Building
+* Personal detail setup (height, weight, profile photo)
+* Automatic BMI calculation with visual scale
+
+---
+
+### 🏠 Smart Dashboard (Home)
+
+* Daily / Weekly / Monthly progress tracking
+* Workout calorie burn stats
+* Macro tracking (Protein, Carbs, Fats)
+* Task completion analytics
+* Sleep & watch sync integration
+* Daily performance score (out of 10)
+* Floating AI Assistant button 🤖
+
+---
+
+### 🏋️ Workout Module
+
+* Add exercises with:
+
+  * Sets & Reps
+  * Weight tracking
+  * Timer-based workouts
+  * Distance tracking (Run/Walk)
+* Workout reminders & alarms
+* Smartwatch data sync
+* AI-generated custom workout plans
+
+---
+
+### 🥗 Meals Module
+
+* Daily meal logging
+* Macro tracking (Protein, Carbs, Calories)
+* Preloaded high-protein meal database
+* AI-based meal plan suggestions
+* Workout-day & Rest-day meal variations
+
+---
+
+### 📋 To-Do Manager
+
+* Task creation with reminders
+* Daily / Weekly scheduling
+* Categorized task grouping
+* Completion tracking with checkbox system
+
+---
+
+### 🤖 AI Fitness Trainer
+
+* ChatGPT-powered assistant
+* Personalized workout plans (e.g., 6 days training, 1 rest)
+* Goal-based meal planning
+* Interactive coaching sessions
+* Smart reminders for meals & workouts
+
+---
+
+## 🎨 UI & Theming
+
+TAB supports multiple premium UI skins:
+
+* Liquid Glass (Default)
+* Material UI Inspired
+* One UI Inspired
+* Nothing UI Inspired (Glyph-style effects)
+
+Additional UI Features:
+
+* Dark Mode toggle
+* Theme selector
+* Custom ringtone & reminder control
+
+---
+
+## 🎯 Vision
+
+TAB is designed to be a complete **AI-powered fitness command center**, helping users stay disciplined, consistent, and guided through intelligent automation and minimal premium design.
+
+---
