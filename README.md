@@ -1,122 +1,40 @@
+# TAB – The Absolute Body (Android/Kotlin)
 
+This repository now contains an **Android Studio compatible Kotlin app** scaffold for **TAB** using:
+- **Kotlin + Jetpack Compose** for UI
+- **Room** for local database
+- **Navigation Compose** for tab navigation
+- **Retrofit + Kotlinx Serialization** placeholder for JWT auth API
 
-# TAB – The Absolute Body 💪
+## Implemented app structure
 
-**TAB (The Absolute Body)** is a modern AI-powered fitness and lifestyle application built with **Flutter** and powered by **Firebase**.
-It helps users track workouts, meals, tasks, and health metrics while receiving personalized AI-driven fitness guidance.
+- Splash/onboarding login-style entry screen with the TAB branding text
+- Bottom tabs: Home, To-Do, Workouts, Meals
+- Top bar with profile icon (left), TAB branding center, hamburger menu (right)
+- Drawer menu entries:
+  - Dark mode toggle
+  - Add watch/sync button
+  - Settings (theme/ringtone)
+  - Logout
+  - Linktree URL: https://linktr.ee/immature.ig
+- Home dashboard summary with score out of 10 and floating 🤖 button
+- To-Do list with add and checkbox completion
+- Workout list with quick add (+) and 🤖 button
+- Meals list with quick add (+) and 🤖 button
 
----
+## Data model (Room)
 
-## 🚀 Overview
+Room entities include:
+- Profile (picture URI, username, name, email, height, weight, goal)
+- To-Do
+- Workout
+- Meal
+- Watch sync
 
-TAB combines fitness tracking, macro monitoring, task management, smartwatch sync, and AI coaching into one seamless experience. The app focuses on clean UI design, intelligent automation, and goal-based transformation.
+## Open in Android Studio
 
----
+1. Open this folder in Android Studio.
+2. Let Gradle sync.
+3. Build and run on emulator/device.
 
-## 🛠 Tech Stack
-
-* **Frontend:** Flutter
-* **Backend & Services:** Firebase
-
-  * Firebase Authentication
-  * Cloud Firestore
-  * Firebase Storage
-  * Firebase Cloud Functions (if used)
-* **Authentication:** JWT-based email/password system
-* **AI Integration:** OpenAI (ChatGPT) API
-
----
-
-## ✨ Core Features
-
-### 🔐 Authentication & Onboarding
-
-* Secure JWT-based email/password login
-* First-time onboarding flow
-* Goal selection:
-
-  * Weight Gain
-  * Weight Loss
-  * Physique Building
-* Personal detail setup (height, weight, profile photo)
-* Automatic BMI calculation with visual scale
-
----
-
-### 🏠 Smart Dashboard (Home)
-
-* Daily / Weekly / Monthly progress tracking
-* Workout calorie burn stats
-* Macro tracking (Protein, Carbs, Fats)
-* Task completion analytics
-* Sleep & watch sync integration
-* Daily performance score (out of 10)
-* Floating AI Assistant button 🤖
-
----
-
-### 🏋️ Workout Module
-
-* Add exercises with:
-
-  * Sets & Reps
-  * Weight tracking
-  * Timer-based workouts
-  * Distance tracking (Run/Walk)
-* Workout reminders & alarms
-* Smartwatch data sync
-* AI-generated custom workout plans
-
----
-
-### 🥗 Meals Module
-
-* Daily meal logging
-* Macro tracking (Protein, Carbs, Calories)
-* Preloaded high-protein meal database
-* AI-based meal plan suggestions
-* Workout-day & Rest-day meal variations
-
----
-
-### 📋 To-Do Manager
-
-* Task creation with reminders
-* Daily / Weekly scheduling
-* Categorized task grouping
-* Completion tracking with checkbox system
-
----
-
-### 🤖 AI Fitness Trainer
-
-* ChatGPT-powered assistant
-* Personalized workout plans (e.g., 6 days training, 1 rest)
-* Goal-based meal planning
-* Interactive coaching sessions
-* Smart reminders for meals & workouts
-
----
-
-## 🎨 UI & Theming
-
-TAB supports multiple premium UI skins:
-
-* Liquid Glass (Default)
-* Material UI Inspired
-* One UI Inspired
-* Nothing UI Inspired (Glyph-style effects)
-
-Additional UI Features:
-
-* Dark Mode toggle
-* Theme selector
-* Custom ringtone & reminder control
-
----
-
-## 🎯 Vision
-
-TAB is designed to be a complete **AI-powered fitness command center**, helping users stay disciplined, consistent, and guided through intelligent automation and minimal premium design.
-
----
+> Note: This is a strong foundation scaffold for your full product vision. Advanced modules (real JWT backend wiring, alarm manager integration, full chatbot with voice, rich theming engines for Liquid Glass/One UI/Nothing UI, and wearable integration APIs) are prepared conceptually and should be implemented in iterative phases.
