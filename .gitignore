@@ -1,0 +1,12 @@
+# Gradle
+.gradle/
+build/
+*/build/
+
+# Local/IDE
+.idea/
+*.iml
+local.properties
+
+# Keep repo text-only for environments that disallow binaries
+gradle/wrapper/gradle-wrapper.jar
